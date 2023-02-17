@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset+banner.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="caja">
+            <h1><img src="banner/barberia/logo.png" alt="logo barberia"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a> </li>
+                    <li><a href="Contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main><!-- contenido -->
+
+        <form><!--etiqueta para declarar un formulario-->
+            <label for="nombreapellido"> Nombre y
+                Apellido</label><!-- se representa como titulo siempre se coloca con el input-->
+            <input type="text" id="nombreapellido" class="input-padron"
+                required><!-- etiqueta para declarar un cuadro de texto -->
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required
+                placeholder=" empresa@outlook.es"><!-- la etiqueta placeholder no ayuda a escribir dentro del input o cuadro -->
+
+            <label for="Telefono">Telefono</label>
+            <input type="tel" id="Telefono" class="input-padron" required placeholder="(xx)xxxxxxxxxx">
+
+            <label for="Mensaje"> Mensaje</label>
+            <textarea cols="70" rows="10" id="Mensaje"></textarea class= "input-padron"><!-- estamos creando una etiqueta para un formulario declarando cols= columnas rows= lineas-->
+
+            <div><!-- aca creamos los puntos de seleccion para el cliente -->
+                
+                <p>¿Como le gustaria que lo contactemos?</p>
+
+                <label for="radio-whatsap"><input type="radio" name="contacto" value="whatsap"id="radio-whatsap">whatsap</label>
+                
+
+                <label for="radio-Correo"><input type="radio" name="contacto" value="Correo" id="radio-Correo">Correo</label>
+                
+
+                <label for="radio-Telefono">  <input type="radio" name="contacto" value="Telefono"id="radio-Telefono" checked>Telefono</label> <!-- la etieuta radio nos ayuda a generar un circulo -->
+             
+            </div>
+            <fieldset><!-- lista de horario-->
+                <legend>En cual hoario desea que lo contactemos?</legend>
+                <select><!-- ESTA ETIQUETA GENERARA UN CUADRO QUE CONTENDRA UNA LISTA DE ITEMS A ELEGIR-->
+                   
+                    <option>Mañana</option>
+                    <option>Tarde </option>
+                    <option>Noche</option>
+                </select>    
+            </fieldset>
+            <!-- el check box nos crea un cuadro pequeño para el cleinte -->
+            <label class="checkbox"> <input type="checkbox" checked>¿Le gustaria recibir novedades de la barberia?</label> <!--otra forma de usar un label y un input dentro de un label-->
+            <input type="submit"value="Enviar Formulario"  class="botonenvioformulario"><!--esta etiqueta nos ayuda a declarar un boton con el cual enviaremos el formulario del cliente -->
+
+            <!-- checked nos ayuda a dejar un cuadro ya marcado para el contacto del cliente  -->
+
+            
+        </form>
+        
+        <table>
+            <thead><!-- es la cabeza de la tabla -->
+            <tr><!-- table row-->
+                <th>Dia</th> <!--table date las celdas  encabezado th-->
+                <th>Horario</th>
+            
+            </tr>
+        </thead>
+         <tbody><!-- es el contenido de las columnas-->
+            <tr>  
+                <td>Lunes</td>
+                <td>08h - 20h</td>
+            </tr>
+            <tr>  
+                <td>Miercoles</td>
+                <td>08h - 20h</td>
+            </tr>
+            <tr>  
+                <td>Viernes</td>
+                <td>08h - 20h</td>
+            </tr>
+         </tbody>
+        
+        
+        </table>
+    </main>
+    <footer><!-- pie de pagina -->
+        <img src="banner/barberia/logo-blanco.png" alt="logo barberia"><!-- la etiqueta alt nos ayuda que el navegador busque imagenes bien  -->
+        <p class="copyright">
+            &copy;Copyrigth Nicolas- 2023
+        </p>
+    </footer>
+
+</body>

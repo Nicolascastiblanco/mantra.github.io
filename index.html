@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"><!-- ESTA ETIQUETA NO AYUDA A DEFINIR  EL DICCIONARIO QUE USAREMOS EN EL NAVEGADOR  -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- esta etiqueta ayuda a que la pagina se adapte a los dispositivos-->
+    <link rel="stylesheet" href="css/productos+index.css">
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/reset+banner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Barberia alura</title> <!--SIRVE PARA DARLE NOMBRE A LA VENTANA EN EL NAVEGADOR -->
+    <!--<style>
+        s
+        p{/*aca se declaran las propiedades */
+            text-align: center;
+
+            background-color: beige;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;   margin: 20px;
+
+        }
+    </style> esta es la 2 dalternativa para darle estilo al codigo html llamando desde el <head> dandole las propiedades -->
+
+</head>
+
+<body>
+    
+    <header>
+       
+        <div class="caja">
+            <h1><img src="banner/barberia/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a> </li>
+                    <li><a href="Contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+      
+        <section class="principal">
+
+            <h2 class=" titulo-principal"> La Barbería Alura</h2>
+            <img class="utensilios" src="css/imagenes/utensilios[1].jpg" alt="Utensilios de un barbero">
+
+            <p> en el corazón de la ciudad, <strong>la Barbería Alura</strong> trae para el mercado lo que
+                hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y
+                conquista nuevos clientes diariamente.</p>
+
+            <P><em>Nuestra misión es: <strong> "Proporcionar autoestima y calidad de vida a nuestros
+                        clientes".</em></strong> </P>
+
+            <p> profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de
+                la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de
+                excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+        </section><!-- etiqueta de contenido -->
+
+        <section class="map"> <!-- aqui esta el mapa generado y vinvulado con google-->
+            <h3 class="titulo-principal">Nuestra Ubicacion</h3>
+            <p>Nuestro establecimiento esta ubucado en el corazon de la ciudad </p>
+            <div class="mapa-contenido">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8984439910746!2d-74.07328748531944!3d4.61219343457869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f999bcf785d27%3A0xfbd310b6d113a4a0!2sPlanetario%20de%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1673823446254!5m2!1ses!2sco"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe><!--etiqueta iframe genera un espacio para mapas imagenes gif  ya sea de videos etc -->
+            </div>
+
+
+        </section>
+
+
+
+        <section class="diferenciales">
+            <h3 class="titulo-principal">Diferenciales</h3>
+
+            <div class="contenido-diferenciales"><!-- lista de diferenciales-->
+                <ul class="listadiferenciales">
+                    <li class="items">Atencion personalizada a los clientes</li>
+                    <li class="items">espacio diferenciado</li>
+                    <li class="items">localizacion</li>
+                    <li class="items">profesionales calificados</li>
+                    <li class="items">Puntualidad</li>
+                    <li class="items">Limpieza</li>
+                </ul><img class="imagen-diferenciales" src="banner/diferenciales.jpg">
+            </div>
+            <div class="video"><!--video -->
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <img src="banner/barberia/logo-blanco.png">
+        <p class="copyright">
+            &copy;Copyrigth Nicolas- 2023
+        </p>
+    </footer>
+</body>
+
+</html>

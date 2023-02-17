@@ -1,0 +1,227 @@
+header {
+
+    background-color: beige;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+main{
+
+    background:linear-gradient(beige,#000000b2) ;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1.5%;
+    /*le da margen ya sea arriba, abajo y derecha y izquierda*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* esta etiqueta le da el tamaño de la caja ya sea maxima o minima border box*/
+    border: 2px ridge aqua;
+    border-radius: 30px;
+    border-bottom-width: 5px;
+
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+
+
+
+}
+
+.productos li:active {
+    /* la etiqueta active generara un color diferente al momento de darle clic*/
+    border-color: green;
+
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.productos li:hover h2 {
+    /* aca esta afectando el tamaño cuando se coloca el puntero encima*/
+    font-size: 33px;
+ 
+}
+
+.pro_descripcion {
+    margin-top: 20;
+    font-size: 18px;
+
+
+}
+
+
+.pro_precio {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+nav a:hover {
+    /* esta etiqueta nos ayuda a darle un color al boton o etiqueta que hayamos usado cuando ponemos el puntero encima */
+    color: #c78c19;
+    text-decoration: underline;
+    /* esta linea subraya */
+
+
+}
+footer{
+    text-align: center ;
+    background: url(imagenes/bg.jpg);
+    padding: 20px;
+    margin: 0px 0px;
+  
+}
+.copyright{
+    color: aliceblue;
+    font-weight: lighter;
+       
+}
+.banner {
+	width: 100%;
+}
+.principal {
+	padding: 3em 0;
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
+.titulo-principal {
+	text-align: center;
+	font-size: 2em; /* al colocar em se define dos veces la propiedad del navegador  la multiplica por dos o numero indicado*/
+	margin: 0 0 1em;
+	clear: left;
+}
+ .titulo-principal::first-letter {
+	/* repetidos la etiqueta first pero le añadimos una propiedad a un solo elemento */
+	font-weight: bold;
+}
+.pricipal,
+p {
+	margin: 0 0 1em;
+}
+.pricipal,
+strong {
+	font-weight: bold;
+}
+.principal,
+em {
+	font-style: italic;
+	font-size: 20px;
+}
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0; /* arriba,derecha abajo izquierda es como se organiza el borde*/
+}
+.map p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+.map {
+	padding: 3em 0;
+	background: linear-gradient(#fefefe, #88888888); /* la propiedad liner-gradient ayuda a degradar dos colores o mas si queremos */
+}
+.mapa-contenido {
+	width: 940px;
+	margin: 0 auto;
+}
+.diferenciales {
+	background: #88888888;
+	margin-bottom: 0;
+	/* box-shadow: inset 0 0 10px red;la etiqueta inset con box-shadow  se usa para darle una marco con opacidad a cualquier etiqueta */
+}
+.contenido-diferenciales {
+	width: 640px;
+	margin: 0 auto;
+}
+.listadiferenciales {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+.items {
+	line-height: 1.5; /* la propiedad line-height le da un espacio entre parrafos*/
+}
+.items:before {
+	content: "✯";
+}
+.items:first-child {
+	/* la etiqueta nth-child nos ayuda a escoger un items de una lista con una misma clase para darle propiedades a esa unica lista tambien sirve con fisrt-child, last-child*/
+	font-weight: bold;
+}
+
+.imagen-diferenciales {
+	width: 60%;
+	box-shadow: 10px 10px 30px 15px black; /* las propiedad box-shadow define un cuadro y le damos indicasiones eje "x" + eje "y" + difuminasion +expansion + color en este orden se le da a la propiedad*/
+}
+.imagen-diferenciales:hover {
+	opacity: 50%; /*la propiedad opacity nos ayuda a opacar una imagen o algun texto donde coloquemos la propiedad */
+	transition: 400ms;
+}
+.video {
+	width: 560px;
+	margin: 0 auto 0px;
+	padding: 15px;
+}
+
+/* aca definimos las popiedades para el tamaño del celuar, tablets, laptops, escritorios*/
+@media screen and (max-width: 1024px) {
+	/* esta propiedad define el tamaño que obtendra toda la pagina al momento de enviarlo a un celular*/
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+	main,.productos{
+		width: auto;
+	}
+	.listadiferenciales,
+	.imagen-diferenciales {
+		width: 100%;
+		text-align: center;
+	}
+}

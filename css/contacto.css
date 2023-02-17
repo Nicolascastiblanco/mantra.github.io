@@ -1,0 +1,114 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+header {
+	background-color: beige;
+	padding: 20px 0;
+	display: block;
+}
+/* .main{
+  width: 940px;
+	margin: 0 auto;
+} */
+
+.caja {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	/* esta etiqueta nos ayuda a darle un color al boton o etiqueta que hayamos usado cuando ponemos el puntero encima */
+	color: #c78c19;
+	text-decoration: underline;
+	/* esta linea subraya */
+}
+
+form {
+	width: 640px;
+	margin: 40px;
+}
+
+form label,
+legend {
+	display: block;
+	font-size: 20px;
+	margin: 10px 20px 10px;
+}
+
+.input-padron {
+	display: inline-block;
+	margin: 0px 0 40px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+.botonenvioformulario {
+	background-color: gray;
+	border-radius: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px; /* la propiedad  border nos genera bordes en todo el contenido  */
+	border: none;
+	width: 40%;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	transition: 1s all; /* la etiqueta transition nos */
+	cursor: pointer; /* la propiedad cursor nos ayuda cuando alguein coloca algo sobre esta propiedad coloca la pano en pintero */
+}
+.botonenvioformulario:hover {
+	background: darkblue;
+	transform: scale(1.2); /* la propiedad transform nos ayuda a generar un aumento al momento en el que colocamos el cursor encima */
+	/*para colocar dos propiedades de transform se usa las dos propiedades en una sola linea  transform: (15) rotate: (75deg);*/
+}
+
+table {
+	margin: 60px 100px;
+	border: 2px solid;
+}
+thead {
+	background: #c78c19;
+	color: black;
+	font-weight: bold;
+}
+td,
+th {
+	padding: 8px 5px;
+	border: 2px solid;
+}
+
+footer {
+	text-align: center;
+	background: url(imagenes/bg.jpg);
+	position: relative;
+	padding: 20px;
+}
+
+.copyright {
+	color: aliceblue;
+	font-weight: lighter;
+	margin: 0 0;
+}
