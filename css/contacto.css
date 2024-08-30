@@ -1,114 +1,226 @@
 body {
-	font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/*__________
+	header
+______________*/
+
 header {
-	background-color: beige;
-	padding: 20px 0;
-	display: block;
+  background-color: beige;
+  padding: 2rem 0;
+  text-align: center;
 }
-/* .main{
-  width: 940px;
-	margin: 0 auto;
-} */
+
 
 .caja {
-	width: 940px;
-	position: relative;
-	margin: 0 auto;
+  width: 90%;
+  max-width: 58.75rem; /* 940px equivalente */
+  margin: 0 auto;
+  position: relative;
 }
-
-nav {
-	position: absolute;
-	top: 110px;
-	right: 0px;
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  list-style-type: none; /* Elimina los puntos de viñeta */
+  padding-left: 0; /* Elimina el padding por defecto de la lista */
 }
-
-nav li {
-	display: inline;
-	margin: 0 0 0 15px;
-}
-
 nav a {
-	text-transform: uppercase;
-	color: black;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 1.375rem; /* 22px equivalente */
+  text-decoration: none;
+  justify-content: space-between;
 }
 
 nav a:hover {
-	/* esta etiqueta nos ayuda a darle un color al boton o etiqueta que hayamos usado cuando ponemos el puntero encima */
-	color: #c78c19;
-	text-decoration: underline;
-	/* esta linea subraya */
+  background-color: aqua;
+  border-radius: 6px;
 }
 
-form {
-	width: 640px;
-	margin: 40px;
+/*__________
+	form
+______________*/
+.form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+  width: 90%;
+  max-width: 40rem; /* 640px equivalente */
+  margin: 4rem auto;
+  
 }
 
 form label,
 legend {
-	display: block;
-	font-size: 20px;
-	margin: 10px 20px 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem; /* 20px equivalente */
+  margin: 1rem 1.25rem; /* 10px y 20px equivalente */
 }
 
 .input-padron {
-	display: inline-block;
-	margin: 0px 0 40px;
-	padding: 10px 25px;
-	width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2.5rem; /* 40px equivalente */
+  padding: 0.625rem 1.5625rem; /* 10px y 25px equivalente */
 }
 
 .checkbox {
-	margin: 20px 0;
+  margin: 1.25rem 0; /* 20px equivalente */
 }
+
 .botonenvioformulario {
-	background-color: gray;
-	border-radius: 15px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px; /* la propiedad  border nos genera bordes en todo el contenido  */
-	border: none;
-	width: 40%;
-	padding: 15px 0;
-	font-size: 18px;
-	font-weight: bold;
-	color: white;
-	transition: 1s all; /* la etiqueta transition nos */
-	cursor: pointer; /* la propiedad cursor nos ayuda cuando alguein coloca algo sobre esta propiedad coloca la pano en pintero */
+  background-color: gray;
+  border-radius: 0.9375rem; /* 15px equivalente */
+  border-top-right-radius: 0.3125rem; /* 5px equivalente */
+  border-bottom-left-radius: 0.3125rem; /* 5px equivalente */
+  border: none;
+  width: 100%;
+  max-width: 18.75rem; /* 300px equivalente */
+  padding: 0.9375rem 0; /* 15px equivalente */
+  font-size: 1.125rem; /* 18px equivalente */
+  font-weight: bold;
+  color: white;
+  transition: 1s all;
+  cursor: pointer;
 }
+
 .botonenvioformulario:hover {
-	background: darkblue;
-	transform: scale(1.2); /* la propiedad transform nos ayuda a generar un aumento al momento en el que colocamos el cursor encima */
-	/*para colocar dos propiedades de transform se usa las dos propiedades en una sola linea  transform: (15) rotate: (75deg);*/
+  background: darkblue;
+  transform: scale(1.1);
+}
+.text_mensaje {
+  width: 30%;
+  height: auto;
+  min-height: 10rem; /* Altura mínima de 10 rem */
+  max-height: 20rem; /* Altura máxima de 20 rem */
+  padding: 0.625rem 1.25rem; /* Padding equivalente a 10px 20px */
+  box-sizing: border-box;
+  font-size: 1rem; /* Tamaño de fuente equivalente a 16px */
+  
 }
 
 table {
-	margin: 60px 100px;
-	border: 2px solid;
-}
-thead {
-	background: #c78c19;
-	color: black;
-	font-weight: bold;
-}
-td,
-th {
-	padding: 8px 5px;
-	border: 2px solid;
+  width: 90%;
+  max-width: 62.5rem; /* 1000px equivalente */
+  margin: 4rem auto;
+  border: 0.125rem solid; /* 2px equivalente */
+  border-collapse: collapse;
 }
 
+.botonenvioformulario {
+  width: auto; /* Permite que el botón se ajuste según su contenido */
+  max-width: 300px;
+}
+
+td,
+th {
+  padding: 0.5rem 0.3125rem; /* 8px y 5px equivalente */
+  border: 0.125rem solid; /* 2px equivalente */
+}
+/*_______________
+
+	footer
+_______________*/
+
 footer {
-	text-align: center;
-	background: url(imagenes/bg.jpg);
-	position: relative;
-	padding: 20px;
+  text-align: center;
+  background: url(imagenes/bg.jpg);
+  position: relative;
+  padding: 2rem;
 }
 
 .copyright {
-	color: aliceblue;
-	font-weight: lighter;
-	margin: 0 0;
+  color: aliceblue;
+  font-weight: lighter;
+  margin: 0;
+}
+
+/* Media Query para pantallas pequeñas (máximo 400px) */
+@media screen and (max-width: 400px) {
+  .imagen_head_contanto {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+	display: block;
+	justify-content: baseline;
+    text-align: center;
+    margin-top: 1.25rem; /* 20px equivalente */
+
+  }
+
+  nav li {
+    display: block;
+    margin: 0.625rem 0; /* 10px equivalente */
+	
+  }
+  .links_header {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+  nav ul {
+	display: flex;
+	justify-content: space-between;
+  }
+  .botonenvioformulario {
+    width: 80%;
+    max-width: none;
+  }
+
+  form {
+    width: 95%;
+  }
+  table {
+    width: 100%;
+    margin: 0.1rem auto; /* 20px equivalente */
+  }
+  .text_mensaje {
+    min-height: 8rem; /* Altura mínima reducida */
+    padding: 0.5rem 1rem; /* Padding más pequeño */
+    font-size: 0.875rem; /* Tamaño de fuente reducido */
+  }
+
+  td,
+  th {
+    padding: 0.3125rem; /* 5px equivalente */
+  }
+}
+
+/* Media Query para pantallas grandes (mínimo 1200px) */
+@media screen and (min-width: 1200px) {
+  .caja {
+    max-width: 71.25rem; /* 1140px equivalente */
+  }
+
+  .botonenvioformulario {
+    max-width: 21.875rem; /* 350px equivalente */
+    padding: 1.25rem 0; /* 20px equivalente */
+    font-size: 1.25rem; /* 20px equivalente */
+  }
+  
+  .table {
+    max-width: 75rem; /* 1200px equivalente */
+  }
+  .text_mensaje {
+    min-height: 15rem; /* Altura mínima mayor */
+    max-height: 30rem; /* Altura máxima mayor */
+    padding: 0.75rem 1.5rem; /* Padding más grande */
+    font-size: 1.125rem; /* Tamaño de fuente aumentado */
+  }
+  td,
+  th {
+    padding: 0.625rem 0.9375rem; /* 10px y 15px equivalente */
+  }
 }

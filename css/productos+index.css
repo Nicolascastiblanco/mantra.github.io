@@ -101,8 +101,8 @@ nav a {
 
 nav a:hover {
     /* esta etiqueta nos ayuda a darle un color al boton o etiqueta que hayamos usado cuando ponemos el puntero encima */
-    color: #c78c19;
-    text-decoration: underline;
+   background-color: aqua;
+   border-radius: 6px;
     /* esta linea subraya */
 
 
@@ -214,6 +214,7 @@ em {
 		text-align: center;
 	}
 	nav {
+		
 		position: static;
 	}
 	main,.productos{
