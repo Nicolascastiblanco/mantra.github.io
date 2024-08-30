@@ -5,7 +5,7 @@ body {
 }
 
 /*__________
-	header
+    header
 ______________*/
 
 header {
@@ -14,28 +14,26 @@ header {
   text-align: center;
 }
 
-
 .caja {
   width: 90%;
   max-width: 58.75rem; /* 940px equivalente */
   margin: 0 auto;
-  position: relative;
 }
+
 nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 80px;
-  list-style-type: none; /* Elimina los puntos de viñeta */
-  padding-left: 0; /* Elimina el padding por defecto de la lista */
+  gap: 30px;
+  list-style-type: none;
 }
+
 nav a {
   text-transform: uppercase;
   color: black;
   font-weight: bold;
   font-size: 1.375rem; /* 22px equivalente */
   text-decoration: none;
-  justify-content: space-between;
 }
 
 nav a:hover {
@@ -44,43 +42,50 @@ nav a:hover {
 }
 
 /*__________
-	form
+    form
 ______________*/
-.form {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-  width: 90%;
+
+form {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna */
+  align-items: center; /* Centra los elementos horizontalmente */
   max-width: 40rem; /* 640px equivalente */
   margin: 4rem auto;
-  
+  width: 100%; /* Asegura que el formulario ocupe el ancho completo del contenedor */
 }
 
 form label,
 legend {
-  display: flex;
-  justify-content: center;
   font-size: 1.25rem; /* 20px equivalente */
-  margin: 1rem 1.25rem; /* 10px y 20px equivalente */
+  margin: 1rem 0; /* Ajusta el margen para un espaciado uniforme */
 }
 
 .input-padron {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 2.5rem; /* 40px equivalente */
+  width: 50%; /* Ajusta el ancho al 50% del contenedor del formulario */
+  max-width: 500px; /* Limita el ancho máximo del input */
   padding: 0.625rem 1.5625rem; /* 10px y 25px equivalente */
+  margin: 0.5rem 0; /* Añade margen arriba y abajo para separación */
+  text-align: center;
+}
+
+.text_mensaje {
+  width: 100%; /* Asegura que el contenedor ocupe el ancho disponible */
+  min-height: 10rem; /* Altura mínima de 10 rem */
+  max-height: 20rem; /* Altura máxima de 20 rem */
+  padding: 0.625rem 1.25rem;
+  box-sizing: border-box;
+  font-size: 1rem; /* Tamaño de fuente equivalente a 16px */
 }
 
 .checkbox {
-  margin: 1.25rem 0; /* 20px equivalente */
+  margin: 1.25rem 0;
 }
 
 .botonenvioformulario {
   background-color: gray;
   border-radius: 0.9375rem; /* 15px equivalente */
   border-top-right-radius: 0.3125rem; /* 5px equivalente */
-  border-bottom-left-radius: 0.3125rem; /* 5px equivalente */
+  border-bottom-left-radius: 0.3125rem;
   border: none;
   width: 100%;
   max-width: 18.75rem; /* 300px equivalente */
@@ -96,16 +101,6 @@ legend {
   background: darkblue;
   transform: scale(1.1);
 }
-.text_mensaje {
-  width: 30%;
-  height: auto;
-  min-height: 10rem; /* Altura mínima de 10 rem */
-  max-height: 20rem; /* Altura máxima de 20 rem */
-  padding: 0.625rem 1.25rem; /* Padding equivalente a 10px 20px */
-  box-sizing: border-box;
-  font-size: 1rem; /* Tamaño de fuente equivalente a 16px */
-  
-}
 
 table {
   width: 90%;
@@ -115,19 +110,14 @@ table {
   border-collapse: collapse;
 }
 
-.botonenvioformulario {
-  width: auto; /* Permite que el botón se ajuste según su contenido */
-  max-width: 300px;
-}
-
 td,
 th {
   padding: 0.5rem 0.3125rem; /* 8px y 5px equivalente */
   border: 0.125rem solid; /* 2px equivalente */
 }
-/*_______________
 
-	footer
+/*_______________
+    footer
 _______________*/
 
 footer {
@@ -151,18 +141,16 @@ footer {
   }
 
   nav {
-	display: block;
-	justify-content: baseline;
+    display: block;
     text-align: center;
-    margin-top: 1.25rem; /* 20px equivalente */
-
+    margin-top: 1.25rem;
   }
 
   nav li {
     display: block;
-    margin: 0.625rem 0; /* 10px equivalente */
-	
+    margin: 0.625rem 0;
   }
+
   .links_header {
     gap: 10px;
   }
@@ -170,31 +158,40 @@ footer {
   nav a {
     font-size: 18px;
   }
+
   nav ul {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
+
+  form {
+    width: 100%;
+  }
+
+  .input-padron {
+    width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+    max-width: none;
+  }
+
   .botonenvioformulario {
     width: 80%;
     max-width: none;
   }
 
-  form {
-    width: 95%;
-  }
   table {
     width: 100%;
-    margin: 0.1rem auto; /* 20px equivalente */
+    margin: 0.1rem auto;
   }
+
   .text_mensaje {
-    min-height: 8rem; /* Altura mínima reducida */
-    padding: 0.5rem 1rem; /* Padding más pequeño */
-    font-size: 0.875rem; /* Tamaño de fuente reducido */
+    min-height: 8rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
   }
 
   td,
   th {
-    padding: 0.3125rem; /* 5px equivalente */
+    padding: 0.3125rem;
   }
 }
 
@@ -204,21 +201,27 @@ footer {
     max-width: 71.25rem; /* 1140px equivalente */
   }
 
+  .input-padron {
+    max-width: 40rem;
+  }
+
   .botonenvioformulario {
     max-width: 21.875rem; /* 350px equivalente */
     padding: 1.25rem 0; /* 20px equivalente */
     font-size: 1.25rem; /* 20px equivalente */
   }
-  
-  .table {
+
+  table {
     max-width: 75rem; /* 1200px equivalente */
   }
+
   .text_mensaje {
-    min-height: 15rem; /* Altura mínima mayor */
-    max-height: 30rem; /* Altura máxima mayor */
-    padding: 0.75rem 1.5rem; /* Padding más grande */
-    font-size: 1.125rem; /* Tamaño de fuente aumentado */
+    min-height: 15rem;
+    max-height: 30rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
   }
+
   td,
   th {
     padding: 0.625rem 0.9375rem; /* 10px y 15px equivalente */
